@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Quiz Show</string>
+    <string name="question">How Many Students in Your Class From Bangladesh?</string>
+    <string name="number">05</string>
+    <string name="ans">Bangladesh</string>
+    <string name="question_title">Question 13/20 </string>
+    <string name="playagain">Play Again  </string>
+    <string name="review">Review Answer</string>
+    <string name="share">Share Source</string>
+    <string name="home">Home</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="generate_pdf">Generate PDF</string>
+    <string name="email">Email</string>
+    <string name="full_name">Full Name</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="toggle_password_visibility">Toggle password visibility</string>
+    <string name="enter_password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sing_in">Sing in</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="singbutton">singbutton</string>
+    <string name="sign_up">Sign up</string>
+    <string name="ready_for_next_quiz">Ready For Next Quiz?</string>
+    <string name="not_now">NOT NOW!</string>
+    <string name="yes">Yes</string>
+    <string name="_10s">10s</string>
+    <string name="congratulation">Congratulations on being the champion! Your dedication and hard work have truly paid off. You’ve earned this victory! Winning first place is no small feat—well done and well deserved!</string>
+    <string name="congratulation_wish">Congratulation !</string>
+    <string name="are_you_sure">Are You Sure?</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+</resources>

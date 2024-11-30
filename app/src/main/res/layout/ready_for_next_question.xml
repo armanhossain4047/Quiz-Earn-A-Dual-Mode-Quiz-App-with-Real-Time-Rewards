@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="150dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/ready_dialog_vector"
+        android:layout_height="150dp">
+
+        <RelativeLayout
+            android:id="@+id/correct_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            tools:ignore="MissingConstraints">
+
+            <View
+                android:id="@+id/correct_view"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/correct_vector"/>
+
+            <TextView
+                android:id="@+id/readyfornextquiz"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ready_for_next_quiz"
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"
+                android:textSize="24sp"
+                android:layout_toEndOf="@id/correct_view"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/timer_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_10s"
+                android:textSize="24sp"
+                android:layout_marginEnd="15dp"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/yellow_red"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/notnow"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/not_now"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/ok_button"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.cardview.widget.CardView>

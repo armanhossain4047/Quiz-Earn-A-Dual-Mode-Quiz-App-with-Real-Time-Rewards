@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="420dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:background="@drawable/congratulation_vector"
+        tools:ignore="TextSizeCheck">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            tools:ignore="MissingConstraints">
+
+            <View
+                android:id="@+id/close_btn"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/close_vector" />
+
+            <TextView
+                android:id="@+id/wish_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="@string/congratulation"
+                android:textColor="@color/purple"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/wish_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:text="@string/congratulation_wish"
+                android:textColor="@color/link"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.cardview.widget.CardView>

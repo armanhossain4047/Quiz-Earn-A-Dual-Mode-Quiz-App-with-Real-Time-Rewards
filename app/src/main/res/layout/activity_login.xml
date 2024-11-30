@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_background_vector"
+        android:padding="40dp">
+        <View
+            android:id="@+id/login_icon_id"
+            android:layout_width="132dp"
+            android:layout_height="132dp"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_page_icon"/>
+        <TextView
+            android:id="@+id/sign_in_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sing In"
+            android:textStyle="bold"
+            android:textSize="42sp"
+            android:textColor="@color/purple"
+            android:layout_below="@+id/login_icon_id"
+            android:layout_marginTop="20dp"/>
+        <RelativeLayout
+            android:id="@+id/username_or_email_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:layout_below="@+id/sign_in_id"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_border_vector"
+            android:paddingEnd="10dp">
+
+            <!-- View (Icon) -->
+            <View
+                android:id="@+id/man_icon_id"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/man_vector" />
+
+            <EditText
+                android:id="@+id/username_or_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/man_icon_id"
+                android:autofillHints="emailAddress|username"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="Enter Email or Username"
+                android:importantForAccessibility="yes"
+                android:inputType="textEmailAddress|textPersonName"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/password_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:layout_below="@+id/username_or_email_id"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_border_vector"
+            android:paddingEnd="10dp">
+
+            <!-- Lock Icon (Start) -->
+            <View
+                android:id="@+id/lock_icon_id"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/password_icon_vector" />
+
+            <!-- Eye Icon (End) -->
+            <ImageButton
+                android:id="@+id/eye_icon_id"
+                android:layout_width="24dp"
+                android:layout_height="18dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/eye_vector"
+                android:clickable="true"
+                android:contentDescription="Toggle password visibility"
+                android:focusable="true"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+            <!-- EditText (Center) -->
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_toStartOf="@id/eye_icon_id"
+                android:layout_toEndOf="@id/lock_icon_id"
+                android:autofillHints="password"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="Enter Password"
+                android:importantForAccessibility="yes"
+                android:inputType="textPassword"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/forget_password_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget Password ?"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple"
+            android:layout_below="@id/password_id"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp"/>
+        <Button
+            android:id="@+id/sing_in_btn_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sing_in"
+            android:contentDescription="singbutton"
+            android:layout_below="@id/forget_password_id"
+            android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:layout_below="@id/sing_in_btn_id"
+                android:id="@+id/sign_in_with_gmail_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="or sign in with"
+                android:textSize="15sp"
+                android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:id="@+id/sign_up_icon_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sign_in_with_gmail_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp">
+
+            <View
+                android:id="@+id/facebook_id"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentStart="true"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/facebook_vector"/>
+
+            <View
+                android:id="@+id/twitter_id"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="2.5dp"
+                android:layout_toEndOf="@id/facebook_id"
+                android:background="@drawable/google_vector"/>
+
+            <View
+                android:id="@+id/gmail_id"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="2.5dp"
+                android:layout_toEndOf="@id/twitter_id"
+                android:background="@drawable/twitter_vector"/>
+
+            <View
+                android:id="@+id/linkdin_id"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="2.5dp"
+                android:layout_toEndOf="@id/gmail_id"
+                android:background="@drawable/linkdin_vector"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/sign_up_icon_id"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:id="@+id/already_have_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/already_have_an_account"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/sign_in_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/already_have_account"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/sign_up"
+                android:textColor="@color/link"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
